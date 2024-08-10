@@ -4,7 +4,6 @@ namespace PedroBruning\LivewireAiChatbot;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use PedroBruning\LivewireAiChatbot\Commands\SkeletonCommand;
 
 class LivewireAiChatbotServiceProvider extends PackageServiceProvider
 {
