@@ -1,24 +1,26 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "pedrobruning/laravel-livewire-ai-chatbot",
+    "description": "A Package that helps integrating with several AI GPT providers",
     "keywords": [
-        ":vendor_name",
+        "pedrobruning",
         "laravel",
-        ":package_slug"
+        "laravel-livewire-ai-chatbot"
     ],
     "homepage": "https://github.com/:vendor_slug/:package_slug",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Pedro Henrique Bruning de Oliveira Schier",
+            "email": "pedro@bruning.dev",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.2",
         "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^10.0||^11.0"
+        "illuminate/contracts": "^10.0||^11.0",
+        "illuminate/support": "^10.0|^11.0",
+        "livewire/livewire": "^3.0"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
@@ -35,14 +37,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "PedroBruning\\LivewireAiChatbot\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
-            "Workbench\\App\\": "workbench/app/"
+            "PedroBruning\\LivewireAiChatbot\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -73,11 +73,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
-            }
+                "PedroBruning\\LivewireAiChatbot\\LivewireAiChatbotServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",

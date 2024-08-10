@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace PedroBruning\LivewireAiChatbot\Commands;
 
 use Illuminate\Console\Command;
 
